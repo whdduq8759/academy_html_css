@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            font-style: italic;
+        }
+        .red{
+            color: red;
+        }
+        #orange{
+            color: orange;
+        }
+        .big{
+            font-size: 1.5em;
+        }
+        #banana{
+            color: yellowgreen;
+        }
+        #melon{
+            font-size: 50px;
+            background: purple;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red big">사과</li>
+        <li id="orange" class="big">오렌지</li>
+        <li id="banana">바나나</li>
+        <li class="red">딸기</li>
+    </ul>
+    <div id="melon">멜론</div>
+
+    <button id="one" class="one">1번</button>
+    <buttonid="two" class="two">2번</buttonid=>
+    <button id="three" class="three">3번</button>
+
+    <script>
+        document.querySelector('button').onclick = e => {
+            alert('1번 버튼이 클릭됨'); };
+            
+        document.querySelector('button').onclick = e => {
+            alert('2번 버튼이 클릭됨'); };
+            
+        document.querySelector('button').onclick = e => {
+            alert('3번 버튼이 클릭됨'); };
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input의 종류</title>
+</head>
+
+<body>
+    <form action="http://www.naver.com" method="post" target="_blank">
+        아이디: <input type="text" id="id" value="abcd"> <br>
+        비밀번호: <input type="password" id="pwd" value="1234"> <br>
+        이메일: <input type="email" id="email"> <br>
+        취미:
+        <input type="checkbox" name="" id="">음악감상
+        <input type="checkbox" name="" id="">영화보기 <br>
+
+        이메일 수신 여부:
+        <input type="radio" name="email-verify" id="yes" checked>예
+        <input type="radio" name="email-verify" id="no" disabled>아니요 <br>
+
+
+        sns 수신 여부:
+        <input type="radio" name="sns-verify" id="yes" checked>예
+        <input type="radio" name="sns-verify" id="no">아니요 <br>
+        
+       파일:
+       <input type="file" name="" id=""> <br>
+
+       범위:
+       <input type="range" name="" id="" min="0" max="50" step="25"> <br>
+        
+       주문수량:
+       <input type="number" name="" id="" value="1"> <br>
+
+       <input type="hidden" name="" value="메롱"> <br>
+        
+       <button id="cm" type="button">그냥버튼</button>
+       <button type="submit">전송버튼</button>
+       <button id="cv" type="reset">초기화버튼</button> <br>
+        
+       
+    </form>
+
+    <script>
+        cm.onclick = e => {
+            alert('하이~~~~~~~~~~~~~~~~~~~~~~~');
+        }
+        
+    </script>
+
+</body>
+
+</html>
