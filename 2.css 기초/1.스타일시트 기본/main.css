@@ -1,0 +1,6 @@
+@import url(style.css);
+
+h1, p{
+    color: red;
+    background: orange;
+}

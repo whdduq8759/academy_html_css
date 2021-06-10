@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        #list>li:nth-child(2n+1) {
+            background: rgb(186, 189, 18);
+
+        }
+
+        #list>li:nth-child(2n) {
+            background: gray;
+        }
+
+        .ad {
+            border: 1px dotted aqua;
+        }
+
+        #ab {
+            color: green;
+        }
+
+        .ac {
+            border: 1px dashed purple;
+        }
+
+        #xxx {
+            color: red;
+        }
+        #ccc{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul id="list">
+            <li class="ad" id="xxx">리스트1</li>
+            <li class="ad" id="ccc">리스트2</li>
+            <li class="ac">리스트3</li>
+            <li class="ac">리스트4</li>
+            <li class="ac">리스트5</li>
+            <li class="ac">리스트6</li>
+            <li class="ac" id="ab">리스트7</li>
+        </ul>
+    </div>
+</body>
+
+</html>

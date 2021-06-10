@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .fruits > li:nth-child(5) {
+           color: rgb(112, 112, 4);
+       }
+
+       .fruits > li:nth-child(odd) {
+           color: blue;
+       }
+       .fruits > li:nth-child(even) {
+           color:brown;
+       }
+       .fruits > li:nth-child(3n+1) {
+           font-style: italic;
+       }
+       /* nth-child()는 뒤에서 부터 해석하기 때문에 2번째에서 p태그가 맞는지 확인해서 맞으면 적용시킴 */
+       .food > p:nth-child(2){
+           font-size: 1.3em;
+       }
+       /* :nth-of-type()는 앞에서 부터 해석하기 때문에 p태그에 첫번째가 실행됨 */
+       .food > p:nth-of-type(1){
+           font-size: 1.3em;
+           color: tomato;
+       }
+       .fruits li:not(.orange){
+           list-style: none;
+
+       }
+    </style>
+</head>
+<body>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>복숭아</li>
+        <li>파인애플</li>
+    </ul>
+
+    <div class="food">
+        <div>짜장면</div>
+        <p>볶음밥</p>
+        <p>닭강정</p>
+        <span>짬뽕</span>
+    </div>
+</body>
+</html>
