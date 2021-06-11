@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 4px solid red;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 4px solid gray;
+
+        }
+
+        .box:nth-child(2) {
+            border-color: blue;
+            margin-top: 20px;
+        }
+
+        .container.c2 {
+            /* margin-top: 70px;
+            margin-left: 120px;
+            margin-bottom: 80px;
+            margin-right: 50px; */
+            /* 네방향 모두 지정하고 싶으면 시계방향으로 px을 지정하면 된다. */
+            margin: 70px 50px 80px 120px;
+
+            /* margin-top: 70px;
+            margin-left: 50px;
+            margin-bottom: 80px;
+            margin-right: 50px; */
+            /* 위 좌우 아래 지정하고 싶으면 위 좌우 아래 순으로 px을 지정하면 된다. */
+            margin: 70px 50px 120px;
+
+
+            /* margin-top: 70px;
+            margin-left: 50px;
+            margin-bottom: 70px;
+            margin-right: 50px; */
+            /* 위아래 좌우 지정하고 싶으면 위아래 좌우 순으로 px을 지정하면 된다. */
+            margin: 70px 50px;
+
+            /* margin-top: 70px;
+            margin-left: 70px;
+            margin-bottom: 70px;
+            margin-right: 70px; */
+            /* 상하좌우 지정하고 싶으면 상화자우 순으로 px을 지정하면 된다 */
+            margin: 70px;
+
+        }
+
+        header {
+            background: red;
+            height: 150px;
+
+        }
+
+        header .inner {
+            width: 50%;
+            height: 100%;
+            background: orange;
+            /* 박스 중앙배치(좌, 우) 중요!!! */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inner"></div>
+    </header>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container c2"></div>
+</body>
+
+</html>

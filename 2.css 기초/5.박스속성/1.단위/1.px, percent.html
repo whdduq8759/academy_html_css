@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+        }
+        /* %는 부모의 단위에 맞게 바뀐다.(중요!!) */
+        .root{
+            width: 80%;
+        }
+        .parent{
+            width: 50%;
+        }
+        .child{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>

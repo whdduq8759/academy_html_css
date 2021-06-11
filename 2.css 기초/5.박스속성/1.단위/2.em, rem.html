@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+        }
+        html{
+            font-size: 10px;
+        }
+        body{
+            font-size: 20px;
+        }
+       /* em은 자신의 font-size와 em으로 설정한 숫자를 곱한 만큼 px로 설정한다 */
+      /* rem은 html의 font-size의 rem으로 설정한 숫자를 곱한 만큼 px로 설정한다. */
+      /* html에서 font-size를 설정하고 body에서 font-size를 다시 설정해서 글씨크기를 지정하면 된다 */
+        .root{
+            width: 60rem;
+        }
+        .parent{
+            width: 50%;
+        }
+        .child{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>
