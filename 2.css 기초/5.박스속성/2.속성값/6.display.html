@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background: red;
+            font-size: 2em;
+            color: yellow;
+            padding: 20px;
+            width: 300px;
+            display: block;
+            text-align: center;
+
+        }
+
+        a {
+            background: yellowgreen;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        input {
+            width: 100px;
+            height: 50px;
+            /* input은 기본값이 display: inline-block이다 */
+            display: inline-block;
+        }
+
+        input:nth-child(3) {
+            display: none;
+        }
+
+        input:nth-child(4) {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="hello">안녕하세요</span>
+    <a href="#">게시판</a>
+    <a href="#">방명록</a>
+    <div class="box">
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+    <div class="a">
+        <div id="b"></div>
+        <div>
+            <p class="c"></p>
+            <p class="d"></p>
+        </div>
+        <div>
+            <p class="c" id="e"></p>
+            <p class="d"></p>
+        </div>
+    </div>
+    <script>
+        hello.onclick = e => {
+            hello.style.display = 'none';
+        }
+    
+    </script>
+</body>
+
+</html>

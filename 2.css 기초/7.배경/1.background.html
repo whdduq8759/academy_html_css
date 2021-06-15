@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 2px dashed gray;
+            background-color: orange;
+            background-image: url(img/sky.jpg);
+            background-size: 200px;
+            background-repeat: no-repeat;
+            /* 앞이 x축 뒤가 y축 */
+            /* px단위로 제어 가능! */
+            background-position: center;
+            /* cover은 사진을 box사이즈에 맞게 사진을 최대한으로 넣어준다 */
+            /* contain은 원본사진을 유지하면서 box에 넣어준다 */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
