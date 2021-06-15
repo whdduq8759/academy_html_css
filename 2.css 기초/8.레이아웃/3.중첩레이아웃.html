@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid red;
+            margin-bottom: 20px;
+
+        }
+
+        /* 중첩 레이아웃 float 버그 해제 */
+        /* 하나의 클래스를 만들어서 필요한 곳에 부여하면 됨 */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 10px;
+            float: left;
+        }
+        .c2{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+            margin-bottom: 20px;
+        }
+        .c3{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="c2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="c3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

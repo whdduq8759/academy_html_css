@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+            
+        }
+        .navi{
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+          
+            padding: 0;
+        }
+        .navi li{
+            float:left;
+        
+            margin: 0 1%;
+            width: 18%;
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 8px;
+            
+
+
+        }
+        .navi li:hover{
+            border-bottom: 3px solid crimson;
+        }
+        .navi li a{
+            text-decoration: none;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <ul class="navi clearfix">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#" >BOARD</a></li>
+        <li><a href="#">LOGIN</a></li>
+    </ul>
+</body>
+</html>

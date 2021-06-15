@@ -10,16 +10,19 @@
             width: 550px;
             height: 350px;
             border: 2px dashed gray;
-            background-color: orange;
+            /* background-color: orange;
             background-image: url(img/sky.jpg);
             background-size: 200px;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
             /* 앞이 x축 뒤가 y축 */
             /* px단위로 제어 가능! */
-            background-position: center;
+            /* background-position: center; */
             /* cover은 사진을 box사이즈에 맞게 사진을 최대한으로 넣어준다 */
             /* contain은 원본사진을 유지하면서 box에 넣어준다 */
-            background-size: cover;
+            /* background-size: cover; */
+            
+            background: orange url(img/sky.jpg) no-repeat fixed 50px 30px / 200px 100px;
+
         }
     </style>
 </head>

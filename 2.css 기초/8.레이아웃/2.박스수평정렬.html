@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 100px;
+            background-image: url(../7.배경/img/sky.jpg);
+            color: white;
+            font-size: 50px;
+            margin: 10px;
+            text-align: center;
+            /* 글자 x축 중앙정렬은 text-align: center;을 사용 */
+            /* 글자 y축 중앙정렬 하는 방법은 rline-height값을 height와 맞추면 y축 중앙정렬 */
+            line-height: 100px;
+            float: left;
+        }
+        .box:nth-child(3n+1){
+            /*clear: both는 float의 위치에 맞게 자동으로 맞춰줌*/
+            clear: both;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+</body>
+</html>
