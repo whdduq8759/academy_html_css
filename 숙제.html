@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;   
+        }
+
+        .container {
+            background: darkgray;
+            border: 5px double #286B8B;
+            width: 1300px;
+            height: 850px;
+            background: gray;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        .container h1 {
+            font-family: 궁서, serif;
+            font-size: 70px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 30px;
+            background: #C0C0C0;
+            color: #3D3D3D;
+        }
+
+        .container .intro {
+            background: #3E3E3E;
+            color: white;
+            margin-top: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: 굴림, serif;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .container .intro .yellow{
+            color: yellow;
+            font-size: 32px;  
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin-left: 6px;
+           
+        }
+
+        .gallery li{
+            width: 310px;
+            height: 580px;
+            margin-left: 8px;
+            border: 1px solid white;
+            
+        }
+
+        .gallery #tulip{
+            background: #ED0000;
+            float: left;
+        
+        }
+
+        .gallery #jebi{
+            background: #FB06BF;
+            float: left;
+        }
+
+        .gallery #hobak{
+            background: #FF5600;
+            float: left;
+        }
+
+        .gallery #sunflower{
+            background:#ECFF0C;
+            float: left;
+        }
+        .img-box{
+            border: 1px solid white;
+        }
+        #tulip .img-box{
+            background-image: url(핑크색꽃.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #jebi .img-box{
+            background-image: url(보라색꽃.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #hobak .img-box{
+            background-image: url(노란꽃.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #sunflower .img-box{
+        
+            background-image: url(해바라기.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;  
+        }
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            font-family: 굴림, serif;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.4;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>나의 아름다운 정원</h1>
+
+        <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+
+        <ul class="gallery clearfix ">
+            <li id="tulip">
+                <div class="img-box"></div>
+                <p>
+                    너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="jebi">
+                <div class="img-box"></div>
+                <p>
+                    드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="hobak">
+                <div class="img-box"></div>
+                <p>
+                    색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="sunflower">
+                <div class="img-box"></div>
+                <p>
+                    태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
