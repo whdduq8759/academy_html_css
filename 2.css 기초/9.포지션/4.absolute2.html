@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed orange;
+            padding: 100px;
+            /* 부모요소에 position 아무거나를 지정하면 자식에서 postion은 그 부모 box안에서 움직이게 된다! */
+            position: absolute;
+        }
+
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed blue;
+            /* 중첩되면 가장 가까운 부모의 postion을 따라서 움직인다.  */
+            position: absolute;
+        }
+
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        .abs {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* 박스 상하좌우 정중앙배치 */
+        .center-box{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="parent">
+            <div class="child center-box">1</div>
+            <div class="child abs">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+</body>
+
+</html>

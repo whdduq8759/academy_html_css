@@ -1,23 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-<style>
+    <style>
+          .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;   
+        }
 
-</style>
+        .container {
+            background: darkgray;
+            border: 5px double #286B8B;
+            width: 1300px;
+            height: 850px;
+            background: gray;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        .container h1 {
+            font-family: 궁서, serif;
+            font-size: 70px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 30px;
+            background: #C0C0C0;
+            color: #3D3D3D;
+        }
+
+        .container .intro {
+            background: #3E3E3E;
+            color: white;
+            margin-top: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: 굴림, serif;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .container .intro .yellow{
+            color: #FEFF00;
+            font-size: 1.1em;  
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin-left: 6px;
+           
+        }
+
+        .gallery li{
+            width: 310px;
+            height: 580px;
+            margin-left: 8px;
+            border: 1px solid white;
+            float: left;
+            
+        }
+
+         #tulip{
+            background: #ED0000;
+           
+        
+        }
+
+        #jebi{
+            background: #FB06BF;
+        
+        }
+
+         #hobak{
+            background: #FF5600;
+         
+        }
+
+         #sunflower{
+            background:#ECFF0C;
+    
+        }
+        .img-box{
+            border: 1px solid white;
+        }
+        #tulip .img-box{
+            background-image: url(../7.배경/img/tulip.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -80px;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #jebi .img-box{
+            background-image: url(../7.배경/img/jebi.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -80px;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #hobak .img-box{
+            background-image: url(../7.배경/img/hobak.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -80px;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;
+        }
+
+        #sunflower .img-box{
+        
+            background-image: url(../7.배경/img/sunflower.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: cover;
+            background-position: -80px;
+           margin-top: 10px;
+           margin-left: 10px;
+            width: 290px;
+            height: 290px;  
+        }
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            font-family: 굴림, serif;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.4;
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        
+
         <h1>나의 아름다운 정원</h1>
 
         <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
 
-        <ul class="gallery clearfix">
+        <ul class="gallery clearfix ">
             <li id="tulip">
                 <div class="img-box"></div>
                 <p>
@@ -50,4 +188,5 @@
 
     </div>
 </body>
+
 </html>
